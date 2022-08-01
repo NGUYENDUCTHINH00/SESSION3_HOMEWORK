@@ -70,21 +70,68 @@
 // }
 
 // Bài 6
-let n =prompt(` Hãy nhập số nguyên n `);
-let a = 0 , b = 1 , nextTerm;
-if(n > 0 && n % 1 == 0){
-    for (let i = 1; i <= n ; i = i + 1){
-        console.log(a )
-        nextTerm = a + b;
-        a = b;
-        b = nextTerm;
+// let n =prompt(` Hãy nhập số nguyên n `);
+// let a = 0 , b = 1 , nextTerm;
+// if(n > 0 && n % 1 == 0){
+//     for (let i = 1; i <= n ; i = i + 1){
+//         console.log(a )
+//         nextTerm = a + b;
+//         a = b;
+//         b = nextTerm;
    
+//     }
+
+// } 
+
+// Bài 7
+// let n =prompt(` Hãy nhập vào 1 số nguyên dương n `);
+// let a = 0;
+// if(n >= 0 && n % 1 == 0 ){
+//     for(let i = 0 ; i <= n ; i ++){
+//         if( i % 2 == 0){
+//             console.log(` ${i} - Số chẵn`);
+//         }
+//         else{
+//             console.log(` ${i } - Số lẻ`);
+//         }
+//     }
+// }
+// else{
+//     console.log(` hãy nhập lại`);
+// }
+
+// Bài 8
+// let n =prompt(` Hãy nhập vào 1 số nguyên dương n `);
+// let a = 0;
+// if(n >= 0 && n % 1 == 0 ){
+//     for(let i = 0 ; i <= n ; i ++){
+//         if( i % 2 == 0 ){
+//             console.log(` ${i} - Số chẵn`);
+//         }
+//     }   
+//     for(let i = 0 ; i <= n ; i ++){
+//         if(i % 2 !== 0 ){
+//             console.log(`${i} - Số lẻ`);
+//         }
+//     }
+// }         
+// else{
+//     console.log(` Hãy nhập lại`);
+// }
+
+// Bài 9 // em buồn ngủ quá mai em làm tiếp em gửi 
+let n =prompt(` Hãy nhập vào 1 số nguyên dương n `);
+if(n >= 0 && n % 1 == 0 ){
+    if ( n == 1 || n == 0 ){
+        console.log(` số 1 hoặc số 0 không phải số nguyên tố`);
     }
-
-} 
-
-
-
-
-
-
+    else if(n % 1 == 0 && n % n == 0 ){
+        console.log(` ${n} là số nguyên tố`);
+    }
+    else{
+        console.log(` ${n } không phải số nguyên tố`);
+    }
+}
+else{
+    console.log(` không hợp lệ`);
+}
